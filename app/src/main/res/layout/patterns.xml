@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_1"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_1"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_2"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_2"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_3"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_3"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_3"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_4"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_4"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_4"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_5"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_5"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_5"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_6"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_6"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_6"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_7"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_7"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_7"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_8"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_8"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_8"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_9"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_9"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_9"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_9"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_10"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_10"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_10"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_10"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_11"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_11"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_11"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_11"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_12"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_12"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_12"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_12"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_13"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_13"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_13"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_13"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_14"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_14"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_14"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_14"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_15"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_15"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_15"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_15"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_16"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_16"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_16"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_16"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pattern_17"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iPattern_17"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pattern_17"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tPattern_17"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+    </TableLayout>
+</ScrollView>

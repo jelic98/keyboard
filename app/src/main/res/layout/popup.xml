@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/primary_dark">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@color/primary_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_languages"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/english"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbEnglish" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbEnglish" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbSerbian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serbian"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbSerbian" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbSerbian" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbGreek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/greek"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbGreek" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbGreek" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbRussian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/russian"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbRussian" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbRussian" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbSpanish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spanish"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbSpanish" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbSpanish" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbItalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/italian"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbItalian" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbItalian" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbGerman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="German"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbGerman" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbGerman" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbCzech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/czech"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbCzech" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbCzech" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbFrench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/french"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbFrench" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbFrench" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbHungarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hungarian"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbHungarian" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbHungarian" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbTurkish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/turkish"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbTurkish" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbTurkish" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbRomanian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/romanian"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbRomanian" />
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbRomanian" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

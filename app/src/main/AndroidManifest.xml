@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="keyboard.ecloga.com.eclogakeyboard">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:killAfterRestore="false"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <service
+            android:name=".EclogaKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method"/>
+        </service>
+
+        <activity
+            android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.SplashScreen"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.SelectLanguage"
+            android:label="@string/ecloga_ime"
+            android:theme="@style/AppTheme.CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SELECTLANGUAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Welcome"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.WELCOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.FailedLogin"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.FAILEDLOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Create"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Home"
+            android:label="@string/ecloga_ime"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Personalize"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.PERSONALIZE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Settings"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Account"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Store"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.STORE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Statistics"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.STATISTICS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Upgrade"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.UPGRADE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.Help"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.HELP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="keyboard.ecloga.com.eclogakeyboard.About"
+            android:label="@string/ecloga_ime">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

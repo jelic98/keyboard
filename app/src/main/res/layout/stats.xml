@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:layout_height="match_parent">
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="5dp"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/chars"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:id="@+id/tvChars"
+                        android:layout_marginTop="50dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/gray"/>
+
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:id="@+id/imageView1"
+                        android:contentDescription="@null"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="5dp"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/time"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:id="@+id/tvTime"
+                        android:layout_marginTop="50dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/gray"/>
+
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:id="@+id/imageView2"
+                        android:contentDescription="@null"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:id="@+id/cardView"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="30dp"
+                    card_view:cardBackgroundColor="@color/gray"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/reset"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+            </TableLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="keyboard.ecloga.com.eclogakeyboard.NavigationDrawerFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

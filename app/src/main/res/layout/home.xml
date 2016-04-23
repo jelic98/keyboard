@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<include
+    android:id="@+id/app_bar"
+    layout="@layout/app_bar" />
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            tools:context="keyboard.ecloga.com.eclogakeyboard.Settigns"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/background">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/accent"
+                android:id="@+id/editText"
+                android:inputType="none"
+                android:visibility="invisible"
+                android:hint="@string/fab_test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/beta_testing1"
+                android:textSize="50sp"
+                android:textColor="@color/primary_dark"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/view"
+                android:layout_marginTop="100dp"
+                android:layout_alignLeft="@+id/cardView1"
+                android:layout_alignStart="@+id/cardView1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/installation"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/instructions"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:id="@+id/cardView1"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                card_view:cardCornerRadius="30dp"
+                card_view:cardBackgroundColor="@color/gray"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/enable"
+                    android:layout_marginTop="15dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        </TableLayout>
+        </ScrollView>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/fab_ico"
+                fab:fab_colorNormal="@color/accent"
+                fab:fab_colorPressed="@color/fab_pressed"
+                fab:fab_colorRipple="@color/fab_ripple"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:layout_height="match_parent"
+        android:layout_width="280dp"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        android:name="keyboard.ecloga.com.eclogakeyboard.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer"/>
+</android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+

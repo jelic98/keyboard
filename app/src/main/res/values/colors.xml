@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#673AB7</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="orange">#FF5722</color>
+    <color name="grey">#607D8B</color>
+
+    <color name="lightred">#EF5350</color>
+    <color name="lightpink">#EC407A</color>
+    <color name="lightpurple">#7E57C2</color>
+    <color name="lightblue">#42A5F5</color>
+    <color name="lightgreen">#66BB6A</color>
+    <color name="lightyellow">#FFF59D</color>
+    <color name="lightorange">#FF7043</color>
+    <color name="lightgrey">#78909C</color>
+
+    <color name="darkred">#B71C1C</color>
+    <color name="darkpink">#C2185B</color>
+    <color name="darkpurple">#311B92</color>
+    <color name="darkblue">#0D47A1</color>
+    <color name="darkgreen">#1B5E20</color>
+    <color name="darkyellow">#FFC107</color>
+    <color name="darkorange">#BF360C</color>
+    <color name="darkgrey">#263238</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent">#F1C40F</color>
+    <color name="fab_pressed">#F1B10F</color>
+    <color name="fab_ripple">#F1D70F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="silver">#FFD7DDE1</color>
+    <color name="gray">#354B60</color>
+    <color name="background">#ECF0F1</color>
+    <color name="thumbColor">#66aaaaaa</color>
+</resources>

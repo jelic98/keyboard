@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@color/background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecf0f1"
+        android:orientation="vertical">
+
+        <com.andexert.expandablelayout.library.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandable:el_headerLayout="@layout/view_header"
+            expandable:el_contentLayout="@layout/view_content"
+            android:background="@color/silver"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbVoiceInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voiceinput"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbVoiceInput" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbVoiceInput" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbAutoCapitalize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autocapitalize"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbAutoCapitalize" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbAutoCapitalize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbAutoSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autospacing"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbAutoSpacing" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbAutoSpacing" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbDoubleSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doublespace"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbDoubleSpace" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbDoubleSpace" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popup"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbPopup" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbPopup" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbOppositeCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oppositecase"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbOppositeCase" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbOppositeCase" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbShakeDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shakedelete"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbShakeDelete" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbShakeDelete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbAllCaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allcaps"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbAllCaps" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbAllCaps" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbChangeKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changekeyboard"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbChangeKeyboard" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbChangeKeyboard" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbVolumeButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volumebuttons"
+                android:textColor="@color/gray"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/cbVolumeButtons" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:contentDescription="@null"
+                android:layout_alignBottom="@id/cbVolumeButtons" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

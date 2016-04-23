@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/preview_background"
+    android:textColor="@color/gray"
+    android:textColorHighlight="@color/white"
+    android:textSize="30sp"
+    android:textAllCaps="true"
+    android:textStyle="bold"
+    android:id="@+id/tvPreview">
+</TextView>

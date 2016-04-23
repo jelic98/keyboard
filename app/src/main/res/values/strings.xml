@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Ecloga Keyboard</string>
+    <string name="ecloga_ime">Ecloga Keyboard</string>
+    <string name="subtype_en_US">International keyboard</string>
+    <string name="action_settings">ActionSettings</string>
+    <string name="back_slash">\</string>
+    <string name="beta_testing1">HOME</string>
+    <string name="app_version">(v 0.2.8)</string>
+    <string name="beta_testing2">Full version available soon</string>
+    <string name="beta_testing3">STAY TUNED!</string>
+    <string name="copy">Copyright © 2015 Ecloga Apps</string>
+    <string name="test">Test Ecloga Keyboard here</string>
+    <string name="apply">Apply</string>
+    <string name="select">Select keyboard theme</string>
+    <string name="black">Coal Black</string>
+    <string name="white">Cloud White</string>
+    <string name="blue">Belize Blue</string>
+    <string name="label_keyboard_key_go">Go</string>
+    <string name="label_keyboard_key_send">Send</string>
+    <string name="label_keyboard_key_next">Next</string>
+    <string name="word_separators">" .,;:!?()[]*&amp;@{}/&lt;>_+=|"</string>
+    <string name="instructions">1. Go to "Language &amp; input" settings\n2. Enable it\n3. Default it\n\nv1.0</string>
+    <string name="save">Save</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_id">931747936871216</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="autocapitalize">AutoCapitalization</string>
+    <string name="click">Click</string>
+    <string name="swoosh">Swoosh</string>
+    <string name="autospacing">Smart spacing</string>
+    <string name="how">How to use?</string>
+    <string name="transparent">TRANSPARENT</string>
+    <string name="how_text">Swipe LEFT/RIGHT = change keyboard\n
+        \nSwipe UP/DOWN = shift or show more characters\n
+        \nDouble swipe UP = caps lock\n
+        \nHold GLOBE key for voice input</string>
+    <string name="doublespace">Double space as a dot</string>
+    <string name="oppositecase">Opposite case on hold</string>
+    <string name="shakedelete">Shake to delete all</string>
+    <string name="handwritting">Handwritting</string>
+    <string name="changekeyboard">Detect movement</string>
+    <string name="blockwords">Block offensive words</string>
+    <string name="spellchecker">SpellChecker</string>
+    <string name="autocorrection">AutoCorrection</string>
+    <string name="wordprediction">Word prediction</string>
+    <string name="plus">+</string>
+    <string name="slogan">Awesome Keyboard.</string>
+    <string name="crop__saving">Saving pictureâ€¦</string>
+    <string name="crop__wait">Please waitâ€¦</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="action_select">Select</string>
+    <string name="vibration">Vibration</string>
+    <string name="welcome">Welcome!</string>
+    <string name="about_text">We are company from Serbia that is really into making beautiful and useful apps for Android platform.\n\nCurrently our apps are only developed for Android, but our plan is to expand to iOS platform in near future.</string>
+    <string name="about">Who are we?</string>
+    <string name="contact">Contact us</string>
+    <string name="contact_text">+381614437010\njelic.ecloga@gmail.com\nwww.ecloga.org</string>
+    <string name="ecloga_slogan">Awesome apps.</string>
+    <string name="faq">Have any questions?</string>
+    <string name="faq_text">Contact us.</string>
+    <string name="feedback">Send feedback</string>
+    <string name="installation">Installation</string>
+    <string name="voiceinput">Voice input</string>
+    <string name="popup">Popup on keypress</string>
+    <string name="numbers">Show numbers on top</string>
+    <string name="languages">Languages</string>
+    <string name="gesture">Gesture input</string>
+    <string name="k_height">Keyboard height</string>
+    <string name="random">Randomize it!</string>
+    <string name="solid">SOLID COLORS</string>
+    <string name="gradient">GRADIENTS</string>
+    <string name="upload_image">UPLOAD IMAGE</string>
+    <string name="sensitivity">Sensitivity</string>
+    <string name="or">OR</string>
+    <string name="bubble">Bubble</string>
+    <string name="balls">Balls</string>
+    <string name="water">Water</string>
+    <string name="plastic">Plastic</string>
+    <string name="metal">Metal</string>
+    <string name="upgrade">Want to upgrade?</string>
+    <string name="upgrade_text">1. Pay $1.99 via Skrill or PayPal\n\n2. Remeber "Transaction ID"\n\n3. Send mail to jelic.ecloga@gmail.com with "Transaction ID"\n\n4. We will send you activation code by email in a couple of hours</string>
+    <string name="upgrade_contact">Contact us</string>
+    <string name="skip">Skip this for now</string>
+    <string name="create">or Create Ecloga ID</string>
+    <string name="wrong">Something went wrong</string>
+    <string name="volumebuttons">Volume buttons action</string>
+    <string name="again">Try again</string>
+    <string name="chars">Total characters</string>
+    <string name="reset">Reset all</string>
+    <string name="badges">View badges</string>
+    <string name="sorry">Sorry!</string>
+    <string name="sorry_text">Still working on this feature</string>
+    <string name="english">English</string>
+    <string name="serbian">Serbian</string>
+    <string name="greek">Greek</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+    <string name="italian">Italian</string>
+    <string name="czech">Czech</string>
+    <string name="french">French</string>
+    <string name="hungarian">Hungarian</string>
+    <string name="turkish">Turkish</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="romanian">Romanian</string>
+    <string name="rock">Let\'s rock!</string>
+    <string name="default_keyboard">Default it</string>
+    <string name="enable">Enable &amp; Default</string>
+    <string name="select_languages">Select languages</string>
+    <string name="fab_test">Type some stuff</string>
+    <string name="allcaps">Big letters layout</string>
+    <string name="primary_lang">I</string>
+    <string name="secondary_lang">II</string>
+    <string name="time">Total time</string>
+    <string name="zero_point_fourty_nine">$0.49</string>
+    <string name="zero_point_sixty_nine">$0.69</string>
+    <string name="zero_point_ninety_nine">$0.99</string>
+    <string name="buy">How to purchase?</string>
+    <string name="buy_text">1. Pay theme price via Skrill or PayPal\n\n2. Remeber "Transaction ID"\n\n3.Hold on theme thumbnail to reveal "Theme ID"\n\n4. Send mail to jelic.ecloga@gmail.com with "Theme ID" and "Transaction ID"\n\n5. We will send you activation code by email in a couple of hours</string>
+    <string name="gotcode">Got a code?</string>
+    <string name="name">Name</string>
+    <string name="logout">Logout</string>
+    <string name="delete">Delete account</string>
+    <string name="login_fb">Log in with Facebook</string>
+    <string name="login_g">Sign in with Google</string>
+    <string name="savedata">Save data</string>
+    <string name="loaddata">Load Data</string>
+    <string-array name="tabs">
+        <item>General</item>
+        <item>Advanced</item>
+    </string-array>
+    <string-array name="tabs_store">
+        <item>Patterns</item>
+        <item>Nature</item>
+    </string-array>
+    <string-array name="tabs_personalize">
+        <item>Themes</item>
+        <item>Sounds</item>
+    </string-array>
+    <string-array name="codes">
+        <item>bokanbratnajludji</item>
+        <item>sofkaburaznajjaci</item>
+        <item>dragomije</item>
+        <item>awesomeness</item>
+    </string-array>
+</resources>

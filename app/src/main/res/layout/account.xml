@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="5dp"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:border_width="5dp"
+                    app:border_color="@color/silver"/>
+
+                    <ImageView
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:src="@color/silver"
+                        android:layout_marginTop="160dp"
+                        android:contentDescription="@null"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:layout_marginTop="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/name"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="25sp"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:id="@+id/logout"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="30dp"
+                    card_view:cardBackgroundColor="@color/gray"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/logout"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:id="@+id/saveData"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="30dp"
+                    card_view:cardBackgroundColor="@color/gray"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/savedata"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:id="@+id/loadData"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    card_view:cardCornerRadius="30dp"
+                    card_view:cardBackgroundColor="@color/gray"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/loaddata"
+                        android:layout_marginTop="15dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            </TableLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="keyboard.ecloga.com.eclogakeyboard.NavigationDrawerFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

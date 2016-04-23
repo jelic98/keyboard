@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_1"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_1"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_2"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_2"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_3"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_3"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_3"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_4"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_4"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_4"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_5"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_5"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_5"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_6"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_6"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_6"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_7"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_7"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_7"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_8"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_8"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_8"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_9"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_9"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_9"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_9"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_10"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_10"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_10"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_10"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_11"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_11"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_11"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_11"
+                    android:text="@string/zero_point_fourty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_12"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_12"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_12"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_12"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_13"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_13"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_13"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_13"
+                    android:text="@string/zero_point_sixty_nine"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/nature_14"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/iNature_14"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/nature_14"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:background="@color/accent"
+                    android:textColor="@color/white"
+                    android:id="@+id/tNature_14"
+                    android:text="@string/zero_point_ninety_nine"/>
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+    </TableLayout>
+</ScrollView>
