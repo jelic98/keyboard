@@ -475,7 +475,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                     PendingIntent pending = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(getApplicationContext(), Home.class), 0);
 
                     notify.setLatestEventInfo(getApplicationContext(), "Warming up!", "Type more than 360 seconds", pending);
-                    notif.notify(0, notify);
+                    //notif.notify(0, notify);
 
                     Preferences.setDefaults("time1", "true", getApplicationContext());
                 } else if (time > 960 && time <= 3600 && time2.equals("false")) {
@@ -484,7 +484,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                     PendingIntent pending = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(getApplicationContext(), Home.class), 0);
 
                     notify.setLatestEventInfo(getApplicationContext(), "Keep it up!", "Type more than 960 seconds", pending);
-                    notif.notify(0, notify);
+                    //notif.notify(0, notify);
 
                     Preferences.setDefaults("time2", "true", getApplicationContext());
                 } else if (time > 3600 && time3.equals("false")) {
@@ -493,7 +493,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                     PendingIntent pending = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(getApplicationContext(), Home.class), 0);
 
                     notify.setLatestEventInfo(getApplicationContext(), "Typing master!", "Type more than 3600 seconds", pending);
-                    notif.notify(0, notify);
+                    //notif.notify(0, notify);
 
                     Preferences.setDefaults("time3", "true", getApplicationContext());
                 }
@@ -712,7 +712,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                 PendingIntent pending = PendingIntent.getActivity(this, 0, new Intent(this, Home.class), 0);
 
                 notify.setLatestEventInfo(getApplicationContext(), "Warming up!", "Type more than 100 characters", pending);
-                notif.notify(0, notify);
+                //notif.notify(0, notify);
 
                 Preferences.setDefaults("keypresscounter1", "true", getApplicationContext());
             } else if (keyPressCounter > 10000 && keyPressCounter <= 10000 && keypresscounter2.equals("false")) {
@@ -721,7 +721,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                 PendingIntent pending = PendingIntent.getActivity(this, 0, new Intent(this, Home.class), 0);
 
                 notify.setLatestEventInfo(getApplicationContext(), "Keep it up!", "Type more than 1000 characters", pending);
-                notif.notify(0, notify);
+                //notif.notify(0, notify);
 
                 Preferences.setDefaults("keypresscounter2", "true", getApplicationContext());
             } else if (keyPressCounter > 10000 && keypresscounter3.equals("false")) {
@@ -730,7 +730,7 @@ public class EclogaKeyboard extends InputMethodService implements KeyboardView.O
                 PendingIntent pending = PendingIntent.getActivity(this, 0, new Intent(this, Home.class), 0);
 
                 notify.setLatestEventInfo(getApplicationContext(), "Typing master!", "Type more than 10000 characters", pending);
-                notif.notify(0, notify);
+                //notif.notify(0, notify);
 
                 Preferences.setDefaults("keypresscounter3", "true", getApplicationContext());
             }

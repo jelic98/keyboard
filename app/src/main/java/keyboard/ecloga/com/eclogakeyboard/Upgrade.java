@@ -1,5 +1,7 @@
 package keyboard.ecloga.com.eclogakeyboard;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +14,8 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.afollestad.materialdialogs.MaterialDialog;
+
+import android.widget.EditText;
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
 
@@ -29,14 +32,10 @@ public class Upgrade extends ActionBarActivity {
         overridePendingTransition(R.anim.activity_open, R.anim.activity_close);
 
         if(Preferences.getDefaults("premium", getApplicationContext()).equals("true")) {
-            new MaterialDialog.Builder(Upgrade.this)
-                    .title("Already upgraded")
-                    .titleColor(getResources().getColor(R.color.gray))
-                    .contentColor(getResources().getColor(R.color.gray))
-                    .positiveColor(getResources().getColor(R.color.primary))
-                    .backgroundColor(getResources().getColor(R.color.white))
-                    .content("You've already upgraded to premium version and you're awesome you don't have to enter the code again in order to see the message which says that you are awesome.")
-                    .positiveText("Ok")
+            new AlertDialog.Builder(Upgrade.this)
+                    .setTitle("Already upgraded")
+                    .setMessage("You've already upgraded to premium version and you're awesome you don't have to enter the code again in order to see the message which says that you are awesome.")
+                    .setPositiveButton(android.R.string.yes, null)
                     .show();
         }
 
@@ -52,19 +51,16 @@ public class Upgrade extends ActionBarActivity {
                 cvCode.startAnimation(anim);
 
                 if(Preferences.getDefaults("premium", getApplicationContext()).equals("false")) {
-                    new MaterialDialog.Builder(Upgrade.this)
-                            .title("Be awesome")
-                            .titleColor(getResources().getColor(R.color.gray))
-                            .contentColor(getResources().getColor(R.color.gray))
-                            .negativeColor(getResources().getColor(R.color.primary))
-                            .positiveColor(getResources().getColor(R.color.primary))
-                            .backgroundColor(getResources().getColor(R.color.white))
-                            .content("Please input activation code you received by email or friend")
-                            .inputType(InputType.TYPE_CLASS_TEXT)
-                            .input(null, null, new MaterialDialog.InputCallback() {
+                    final EditText input = new EditText(Upgrade.this);
+                    new AlertDialog.Builder(Upgrade.this)
+                            .setTitle("Be awesome")
+                            .setMessage("Please input activation code you received by email or friend")
+                            .setView(input)
+                            .setPositiveButton("Done", new DialogInterface.OnClickListener() {
                                 @Override
-                                public void onInput(MaterialDialog dialog, CharSequence input) {
-                                    String code = String.valueOf(input);
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    String code = input.getText().toString();
 
                                     if(code.equals("bokanbratnajludji") ||
                                             code.equals("sofkaburaznajjaci") ||
@@ -92,14 +88,7 @@ public class Upgrade extends ActionBarActivity {
                                     }
                                 }
                             })
-                            .positiveText("Done")
-                            .negativeText("Back")
-                            .callback(new MaterialDialog.ButtonCallback() {
-                                @Override
-                                public void onPositive(MaterialDialog dialog) {
-
-                                }
-                            })
+                            .setNegativeButton("Back", null)
                             .show();
                 }else {
                     SnackbarManager.show(

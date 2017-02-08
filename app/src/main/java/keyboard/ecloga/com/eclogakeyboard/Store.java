@@ -1,5 +1,7 @@
 package keyboard.ecloga.com.eclogakeyboard;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-import com.afollestad.materialdialogs.MaterialDialog;
+
 
 public class Store extends ActionBarActivity {
 
@@ -29,22 +31,16 @@ public class Store extends ActionBarActivity {
         setContentView(R.layout.store);
 
         if(Preferences.getDefaults("premium", getApplicationContext()).equals("false")) {
-            new MaterialDialog.Builder(Store.this)
-                    .title("Unlock all themes")
-                    .titleColor(getResources().getColor(R.color.gray))
-                    .contentColor(getResources().getColor(R.color.gray))
-                    .negativeColor(getResources().getColor(R.color.primary))
-                    .positiveColor(getResources().getColor(R.color.primary))
-                    .backgroundColor(getResources().getColor(R.color.white))
-                    .content("If you want to get all themes and be awesome, please upgrade to premium version")
-                    .positiveText("Upgrade")
-                    .callback(new MaterialDialog.ButtonCallback() {
+            new AlertDialog.Builder(Store.this)
+                    .setTitle("Unlock all themes")
+                    .setMessage("If you want to get all themes and be awesome, please upgrade to premium version")
+                    .setPositiveButton("Upgrade", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onPositive(MaterialDialog dialog) {
+                        public void onClick(DialogInterface dialogInterface, int i) {
                             startActivity(new Intent(Store.this, Upgrade.class));
                         }
                     })
-                    .negativeText("No, thanks").show();
+                    .setNegativeButton("No, thanks", null).show();
         }
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);

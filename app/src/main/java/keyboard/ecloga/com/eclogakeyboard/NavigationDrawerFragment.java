@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.afollestad.materialdialogs.MaterialDialog;
+
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
 
@@ -56,7 +56,6 @@ public class NavigationDrawerFragment extends android.support.v4.app.Fragment im
         int[] icons = {
                 R.drawable.personalize,
                 R.drawable.settings,
-                R.drawable.account,
                 R.drawable.store,
                 R.drawable.stats,
                 R.drawable.upgrade,
@@ -66,7 +65,6 @@ public class NavigationDrawerFragment extends android.support.v4.app.Fragment im
         String[] titles = {
                 "Personalize",
                 "Settings",
-                "My Account",
                 "Store",
                 "Stats & Badges",
                 "Upgrade",
@@ -127,58 +125,33 @@ public class NavigationDrawerFragment extends android.support.v4.app.Fragment im
                 }
                 break;
             case 3:
-                if(Preferences.getDefaults("login", getActivity().getApplicationContext()).equals("true")) {
-                    startActivity(new Intent(getActivity(), Account.class));
-                }else {
-                    new MaterialDialog.Builder(getActivity())
-                            .title("Please log in to continue")
-                            .titleColor(getResources().getColor(R.color.gray))
-                            .negativeColor(getResources().getColor(R.color.primary))
-                            .positiveColor(getResources().getColor(R.color.primary))
-                            .backgroundColor(getResources().getColor(R.color.white))
-                            .positiveText("Log in")
-                            .negativeText("No, thanks")
-                            .callback(new MaterialDialog.ButtonCallback() {
-                                @Override
-                                public void onPositive(MaterialDialog dialog) {
-                                    startActivity(new Intent(getActivity(), Welcome.class));
-                                }
-                            })
-                            .show();
-                }
-
-                if(!getActivity().getClass().getSimpleName().equals("Home")) {
-                    this.getActivity().finish();
-                }
-                break;
-            case 4:
                 startActivity(new Intent(getActivity(), Store.class));
 
                 if(!getActivity().getClass().getSimpleName().equals("Home")) {
                     this.getActivity().finish();
                 }
                 break;
-            case 5:
+            case 4:
                 startActivity(new Intent(getActivity(), Statistics.class));
 
                 if(!getActivity().getClass().getSimpleName().equals("Home")) {
                     this.getActivity().finish();
                 }
                 break;
-            case 6:
+            case 5:
                 startActivity(new Intent(getActivity(), Upgrade.class));
 
                 if(!getActivity().getClass().getSimpleName().equals("Home")) {
                     this.getActivity().finish();
                 }
                 break;
-            case 7:
+            case 6:
                 startActivity(new Intent(getActivity(), Help.class));
                 if(!getActivity().getClass().getSimpleName().equals("Home")) {
                     this.getActivity().finish();
                 }
                 break;
-            case 8:
+            case 7:
                 startActivity(new Intent(getActivity(), About.class));
 
                 if(!getActivity().getClass().getSimpleName().equals("Home")) {

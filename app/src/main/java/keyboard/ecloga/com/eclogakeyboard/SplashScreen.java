@@ -41,14 +41,8 @@ public class SplashScreen extends Activity {
                 }catch(Exception e){
 
                 }finally{
-                    if(Preferences.getDefaults("boot", getApplicationContext()).equals("true") ||
-                            Preferences.getDefaults("login", getApplicationContext()).equals("true")) {
-                        Intent intent = new Intent(SplashScreen.this, Home.class);
-                        startActivity(intent);
-                    }else {
-                        Intent intent = new Intent(SplashScreen.this, Welcome.class);
-                        startActivity(intent);
-                    }
+                    Intent intent = new Intent(SplashScreen.this, Home.class);
+                    startActivity(intent);
                     finish();
                 }
             }

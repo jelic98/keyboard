@@ -4,10 +4,6 @@
     package="keyboard.ecloga.com.eclogakeyboard">
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -16,9 +12,6 @@
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
-
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
 
         <service
             android:name=".EclogaKeyboard"
@@ -31,16 +24,6 @@
                 android:name="android.view.im"
                 android:resource="@xml/method"/>
         </service>
-
-        <activity
-            android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity"
-            android:theme="@android:style/Theme.Translucent" />
-
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
 
         <activity
             android:name="keyboard.ecloga.com.eclogakeyboard.SplashScreen"
@@ -62,24 +45,6 @@
         </activity>
 
         <activity
-            android:name="keyboard.ecloga.com.eclogakeyboard.Welcome"
-            android:label="@string/ecloga_ime">
-            <intent-filter>
-                <action android:name="android.intent.action.WELCOME"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="keyboard.ecloga.com.eclogakeyboard.FailedLogin"
-            android:label="@string/ecloga_ime">
-            <intent-filter>
-                <action android:name="android.intent.action.FAILEDLOGIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name="keyboard.ecloga.com.eclogakeyboard.Create"
             android:label="@string/ecloga_ime">
             <intent-filter>
@@ -94,7 +59,7 @@
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.HOME"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
@@ -112,15 +77,6 @@
             android:label="@string/ecloga_ime">
             <intent-filter>
                 <action android:name="android.intent.action.SETTINGS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="keyboard.ecloga.com.eclogakeyboard.Account"
-            android:label="@string/ecloga_ime">
-            <intent-filter>
-                <action android:name="android.intent.action.ACCOUNT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
