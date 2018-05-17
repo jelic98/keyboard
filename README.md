@@ -2,6 +2,8 @@
 
 Soft keyboard with simple interface for Android platform.
 
+Get it here: https://play.google.com/store/apps/details?id=keyboard.ecloga.com.eclogakeyboard
+
 Features:
 - Voice input
 - Multiple language support
