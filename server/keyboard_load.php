@@ -1,5 +1,5 @@
 <?php 
-$connect = mysql_connect("db7.cpanelhosting.rs", "jelic98_admin", "eclogaapps1998") or die(mysql_error()); 
+$connect = mysql_connect(".", ".", ".") or die(mysql_error()); 
    
 mysql_select_db("jelic98_database") or die(mysql_error()); 
 
